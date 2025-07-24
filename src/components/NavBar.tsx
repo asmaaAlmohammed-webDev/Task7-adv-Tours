@@ -11,6 +11,7 @@ interface NavProps {
   className?: string;
   onLoginClick?: () => void;
   onSignupClick?: () => void;
+  handleOpenModal?: () => "login" | "signup";
 }
 const Navbar = ({
   links,
@@ -18,6 +19,7 @@ const Navbar = ({
   className,
   onLoginClick,
   onSignupClick,
+  handleOpenModal,
 }: NavProps) => {
   return (
     <nav

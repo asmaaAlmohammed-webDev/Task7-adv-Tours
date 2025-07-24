@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 interface SliderWrapperProps {
   items: ReactNode[];
   customClass?: string;
@@ -66,18 +67,18 @@ const GeneralSlider = ({
       </Swiper>
 
       {/* Navigation buttons */}
-      <div className="absolute top-[-100px] lg:top-[-130px] right-0 flex gap-2 z-50 p-3 ">
+      <div className="absolute top-[-100px] lg:top-[-130px] md:top-[-180px] right-0 flex gap-2 z-50 md:mt-8">
         <button
           ref={prevRef}
           className="custom-prev flex w-[50px] h-[50px] items-center justify-center rounded-full bg-[#D9D9D9] text-white hover:opacity-80 transition"
         >
-          ←
+          <FaArrowLeft />
         </button>
         <button
           ref={nextRef}
           className="custom-next flex w-[50px] h-[50px] items-center justify-center rounded-full bg-[#FA8B02] text-white hover:opacity-80 transition"
         >
-          →
+          <FaArrowRight />
         </button>
       </div>
     </div>

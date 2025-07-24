@@ -36,7 +36,7 @@ const FilterOptionBox = ({
               </option>
             ))}
           </select>
-          <FiChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none" />
+          <FiChevronDown className="absolute right-0 top-1/3 transform -translate-y-1 text-gray-400 pointer-events-none" />
         </div>
       </div>
     </div>
