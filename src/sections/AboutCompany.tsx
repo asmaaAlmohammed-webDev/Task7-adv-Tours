@@ -25,7 +25,7 @@ const AboutCompany = ({
   return (
     <section className="px-6 md:px-12  2xl:px-[160px] 4xl:px-[300px] mb-28  ">
       <div
-        className={`flex flex-wrap  justify-center 2xl:justify-between items-center gap-7 ${className}`}
+        className={`flex flex-wrap md:flex-nowrap  justify-center 2xl:justify-between items-center gap-7 ${className}`}
       >
         <div className="w-[300px] md:w-[330px] xl:w-[450px]  ">
           <Image

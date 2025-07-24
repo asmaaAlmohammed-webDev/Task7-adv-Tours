@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "aos/dist/aos.css";
 import { Open_Sans } from "next/font/google";
 import NavbarScrollEffect from "@/components/NavbarScrollEffect";
 import Footer from "@/components/Footer";
+import AOSInitializer from "@/components/AOSInitializer";
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: [
@@ -28,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={openSans.className}>
       <body>
+        <AOSInitializer />
         <NavbarScrollEffect />
         {children}
         <Footer />

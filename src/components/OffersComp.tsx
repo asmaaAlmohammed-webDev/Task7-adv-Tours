@@ -4,7 +4,11 @@ const OffersComp = () => {
   return (
     <div className="relative mb-28 bg-[#FBD8C3] px-6 md:px-12  2xl:px-[140px] 4xl:px-[300px]">
       <div className="flex flex-col lg:flex-row justify-between items-center min-h-[450px] pt-12 pb-28 lg:pb-0">
-        <div className="bg-[#FFFFFF4D] rounded-3xl p-[25px] max-w-[569px] text-center ">
+        <div
+          className="bg-[#FFFFFF4D] rounded-3xl p-[25px] max-w-[569px] text-center "
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h3 className="font-extrabold text-[24px] lg:text-[32px] text-[#333333] mb-6">
             Get Special Offers for Organizations
           </h3>

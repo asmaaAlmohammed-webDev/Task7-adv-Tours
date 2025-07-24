@@ -26,10 +26,16 @@ const Hero = ({
       <div className="content text-center">
         <h1
           className={`title font-normal text-5xl lg:text-7xl text-white mb-4 ${podcastFont.className}`}
+          data-aos="fade-up"
+          data-aos-duration="2000"
         >
           {title}
         </h1>
-        <p className="desc font-bold text-2xl text-white  md:max-w-[600px] xl:w-[847px] mx-auto">
+        <p
+          className="desc font-bold text-2xl text-white  md:max-w-[600px] xl:w-[847px] mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           {description}
         </p>
       </div>

@@ -21,7 +21,11 @@ const Footer = () => {
         {/* Footer Columns */}
 
         <div className="flex flex-col justify-between  border-b border-t border-gray-700 py-10 w-full mx-auto">
-          <div className="flex flex-wrap gap-3  2xl:gap-10 4xl:gap-24  w-full">
+          <div
+            className="flex flex-wrap gap-3  2xl:gap-10 4xl:gap-24  w-full"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             {columns.map((column, index) => (
               <div key={index}>
                 <h4 className="font-extrabold text-[20px] mb-4">

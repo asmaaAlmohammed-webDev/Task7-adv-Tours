@@ -9,7 +9,11 @@ const ExploreCard = ({
   iconWithText,
 }: ExploreCard) => {
   return (
-    <div className="explore-card  w-[85%] md:max-w-[330px] mx-auto">
+    <div
+      className="explore-card  w-[85%] md:max-w-[330px] mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <Image
         src={image}
         alt="explore-img"

@@ -3,7 +3,11 @@ import Image from "next/image";
 
 const AdSectionCard = ({ icon, description }: AdSectionCardType) => {
   return (
-    <div className="bg-[#FFFFFF4D] p-7 rounded-3xl h-[189px] w-[292px]">
+    <div
+      className="bg-[#FFFFFF4D] p-7 rounded-3xl h-[189px] w-[292px]"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className=" max-w-[60px] mx-auto">
         <Image
           src={icon}

@@ -10,7 +10,11 @@ const PopularPackagesCard = ({
   iconWithTxt,
 }: PopularPackagesCardType) => {
   return (
-    <div className="w-[85%] md:max-w-[260px] 4xl:max-w-[330px]  ">
+    <div
+      className="w-[85%] md:max-w-[260px] 4xl:max-w-[330px]  "
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <div className="  ">
         <Image
           src={image}

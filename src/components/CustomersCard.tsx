@@ -2,7 +2,11 @@ import Image from "next/image";
 import { CustomersCardType } from "@/types/CustomersCardType";
 const CustomersCard = ({ image, name, description }: CustomersCardType) => {
   return (
-    <div className="bg-white max-w-[700px] flex flex-col justify-center items-center text-center max-h-[406px] mx-auto p-6">
+    <div
+      className="bg-white max-w-[700px] flex flex-col justify-center items-center text-center max-h-[406px] mx-auto p-6"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <Image
         src={image}
         alt="customer-img"

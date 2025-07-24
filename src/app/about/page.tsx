@@ -27,8 +27,8 @@ const About = () => {
         widthImage={600}
         heightImage={516}
       />
-      <CustomersSays />
       <AdSection />
+      <CustomersSays />
     </>
   );
 };
