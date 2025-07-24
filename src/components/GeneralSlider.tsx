@@ -39,9 +39,17 @@ const GeneralSlider = ({
           nextEl: nextRef.current,
         }}
         onBeforeInit={(swiper) => {
-          if (prevRef.current && nextRef.current) {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
+          if (
+            typeof swiper.params.navigation === "object" &&
+            swiper.params.navigation !== null &&
+            prevRef.current &&
+            nextRef.current
+          ) {
+            swiper.params.navigation = {
+              ...swiper.params.navigation,
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            };
           }
         }}
         onSwiper={(swiper) => {
